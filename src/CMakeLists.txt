@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.26)
+project(JSONLIB VERSION 1.0.0)
+set(CMAKE_CXX_STANDARD 11)
+set(LIBRARY_OUTPUT_PATH ${LIB_PATH})
+include_directories(${HEAD_PATH})
+file(GLOB SRC_LIST *.cpp)
+add_library(json STATIC ${SRC_LIST})
